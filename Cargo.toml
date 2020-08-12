@@ -1,0 +1,21 @@
+[package]
+name = "rvoicehook"
+version = "0.1.0"
+authors = ["wyozi"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+test = []
+
+[dependencies]
+glua-sys = { git = "https://github.com/SpiralP/rust-glua-sys" }
+libloading = "0.6"
+goblin = "0.2"
+detour = "0.7"
+magnum-opus = "0.3"
+byteorder = "1.3"
